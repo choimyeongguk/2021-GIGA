@@ -1,0 +1,110 @@
+body {
+ margin: 0;
+}
+header {
+ text-align: center;
+ height: 15vh;
+ padding-top: 20px;
+}
+h1{
+ margin: 0;
+}
+h2{
+ font-size: 5vw;
+}
+hr{
+ margin: 0;
+}
+main{
+ margin: 0;
+ padding-top: 15px;
+ height: 600px;
+}
+footer{
+ margin-top: 0;
+ text-align: center;
+}
+a {
+ color: #000;
+ text-decoration: none;
+ display: inline-block;
+}
+
+.button1 {
+ text-align: center;
+}
+.button1 > ul {
+ list-style: none;
+ padding: 0;
+ margin-bottom: 10px;
+}
+.button1 > ul > a > li {
+ border: 1px solid #000;
+ border-radius: 25px;
+ text-align: center;
+ width: 75vw;
+ height: 55px;
+ line-height: 55px;
+ margin-left: auto;
+ margin-right: auto;
+ font-size: 5vw;
+}
+#makers {
+ margin: 20px 5vw;
+}
+
+.button2 > ul {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+.button2 > ul > a > li {
+ display: inline-block;
+ border: 1px solid #000;
+ border-radius: 25px;
+ text-align: center;
+ width: 27.5vw;
+ height: 27.5vw;
+ line-height: 27.5vw;
+ font-size: 2vmax;
+}
+#button2-1 {
+ position: absolute;
+ top: 400px;
+ left: 15vw;
+ animation: slide1 1s;
+}
+#button2-2 {
+ position: absolute;
+ top: 400px;
+ left: 57.5vw;
+ animation: slide2 1s;
+}
+#button2-3 {
+ position: absolute;
+ top: 550px;
+ left: 15vw;
+ animation: slide1 1.5s;
+}
+#button2-4 {
+ position: absolute;
+ top: 550px;
+ left: 57.5vw;
+ animation: slide2 1.5s;
+}
+@keyframes slide1 {
+ from {
+  left: -20vw;
+ }
+ to {
+  left: 15vw;
+ }
+}
+@keyframes slide2 {
+ from {
+  left: 100vw;
+ }
+ to {
+  left: 57.5vw;
+ }
+}

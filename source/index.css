@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Stylish&display=swap');
+@keyframes slide {
+ from {
+  top: 73vh;
+  opacity: 0;
+ }
+ to {
+  top: 400px;
+  opacity: 1;
+ }
+}
+@keyframes title {
+ from {
+  opacity: 0;
+ }
+ to {
+  opacity: 1;
+ }
+}
+body {
+ margin: 0;
+}
+header {
+ text-align: center;
+ height: 15vh;
+ padding-top: 20px;
+ color: black;
+ font-family: 궁서체;
+}
+h1 {
+ margin: 0;
+ font-size: 2.5em;
+}
+h1,
+h2 {
+ animation: title 3s;
+}
+hr {
+ margin: 0;
+}
+main {
+ margin: 0;
+ padding-top: 75px;
+ height: 450px;
+ background-color: rgba(0, 0, 0, 0.5);
+}
+footer {
+ margin-top: 0;
+ text-align: center;
+}
+a {
+ color: #000;
+}
+
+.button1 {
+ text-align: center;
+}
+.button1 > ul {
+ list-style: none;
+ padding: 0;
+ margin-top: 0;
+ margin-bottom: 50px;
+}
+.button1 > ul > a > li {
+ display: inline-block;
+ border: 1px solid #000;
+ border-radius: 25px;
+ text-align: center;
+ width: 20vmax;
+ height: 55px;
+ line-height: 55px;
+ font-size: 1.5vmax;
+ background-color: white;
+ font-family: 고딕;
+}
+#makers {
+ margin: 0 5vw;
+}
+
+.button2 > ul {
+ list-style: none;
+}
+.button2 > ul > a > li {
+ display: inline-block;
+ text-align: center;
+ width: 12.5vmax; /*수정부분*/
+ height: 12.5vmax; /*수정부분*/
+ line-height: 12.5vw;
+ font-family: "Jua", sans-serif;
+ font-size: 2.5vmax;
+ background-color: rgba(0, 0, 0, 0.5);
+ border-radius: 25px;
+}
+#button2-1 {
+ position: absolute;
+ top: 73vh;
+ left: 10vw;
+ opacity: 0;
+ border: 5px solid #FB9DA7;
+ animation: slide 1s ease-out;
+ animation-fill-mode: forwards;
+ color: #FB9DA7;
+ box-shadow: 0px 10px #FB9DA7;
+}
+#button2-2 {
+ position: absolute;
+ top: 73vh;
+ left: 26.875vw;
+ opacity: 0;
+ border: 5px solid #fcccd4;
+ color: #fcccd4;
+ animation: slide 1s ease-out;
+ animation-delay: 0.2s;
+ animation-fill-mode: forwards;
+ box-shadow: 0px 10px #fcccd4;
+}
+#button2-3 {
+ position: absolute;
+ top: 73vh;
+ left: 0;
+ right: 0;
+ margin-left: auto;
+ margin-right: auto;
+ opacity: 0;
+ border: 5px solid #fbdea2;
+ color: #fbdea2;
+ animation: slide 1s ease-out;
+ animation-delay: 0.4s;
+ animation-fill-mode: forwards;
+ box-shadow: 0px 10px #fbdea2;
+}
+#button2-4 {
+ position: absolute;
+ top: 73vh;
+ right: 26.875vw;
+ opacity: 0;
+ border: 5px solid #f2e2c6;
+ color: #f2e2c6;
+ animation: slide 1s ease-out;
+ animation-delay: 0.6s;
+ animation-fill-mode: forwards;
+ box-shadow: 0px 10px #f2e2c6;
+}
+#button2-5 {
+ position: absolute;
+ top: 73vh;
+ right: 10vw;
+ opacity: 0;
+ border: 5px solid #8eb695;
+ color: #8eb695;
+ animation: slide 1s ease-out;
+ animation-delay: 0.8s;
+ animation-fill-mode: forwards;
+ box-shadow: 0px 10px #8eb695;
+}
+#button2-1:hover {
+ box-shadow: 0px 0px;
+ transform: translate(0px, 10px);
+}
+#button2-2:hover {
+ box-shadow: 0px 0px;
+ transform: translate(0px, 10px);
+}
+#button2-3:hover {
+ box-shadow: 0px 0px;
+ transform: translate(0px, 10px);
+}
+#button2-4:hover {
+ box-shadow: 0px 0px;
+ transform: translate(0px, 10px);
+}
+#button2-5:hover {
+ box-shadow: 0px 0px;
+ transform: translate(0px, 10px);
+}
+.bg_gradation1 {
+ background: linear-gradient(270deg, #98ddca, #d5ecc2, #ffd3b4, #ffaaa7);
+ background-size: 800% 800%;
+
+ -webkit-animation: AnimationName 14s ease infinite;
+ -moz-animation: AnimationName 14s ease infinite;
+ animation: AnimationName 14s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+ 0% {
+  background-position: 97% 0%;
+ }
+ 50% {
+  background-position: 4% 100%;
+ }
+ 100% {
+  background-position: 97% 0%;
+ }
+}
+@-moz-keyframes AnimationName {
+ 0% {
+  background-position: 97% 0%;
+ }
+ 50% {
+  background-position: 4% 100%;
+ }
+ 100% {
+  background-position: 97% 0%;
+ }
+}
+@keyframes AnimationName {
+ 0% {
+  background-position: 97% 0%;
+ }
+ 50% {
+  background-position: 4% 100%;
+ }
+ 100% {
+  background-position: 97% 0%;
+ }
+}
