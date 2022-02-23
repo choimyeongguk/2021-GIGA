@@ -1,1 +1,129 @@
-안녕하세요
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>공연 동아리</title>
+  <style>
+   @keyframes fade {
+    from {
+     opacity: 0;
+     top: 175px;
+    }
+    to {
+     opacity: 1;
+     top: 150px;
+    }
+   }
+   @keyframes downToup {
+    from {
+     margin-bottom: 0;
+    }
+    to {
+     margin-bottom: 100px;
+    }
+   }
+   body {
+    margin: 0;
+    text-align: center;
+    background-color: #000;
+   }
+   h1 {
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+   }
+   img {
+    width: 100%;
+    border-radius: 25%;
+   }
+   table {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.75vw;
+    animation: fade 1.5s;
+    color: white;
+   }
+   td {
+    border: 1px solid #fff;
+    border-radius: 25%;
+   }
+   tr:nth-child(2n + 1) {
+    height: 12.5vw;
+   }
+   tr:nth-child(2n) > td {
+    border: 0px;
+    height: 50px;
+    padding-bottom: 25px;
+   }
+   td:nth-child(2n + 1) {
+    width: 12.5vw;
+   }
+   td:nth-child(2n) {
+    border: 0px;
+    width: 10vmax;
+   }
+   span {
+    font-size: medium;
+    padding: 2px 4px;
+    margin: 0 10px;
+    border-radius: 2px;
+    background: #808080;
+    color: #fff;
+   }
+  </style>
+ </head>
+ <body>
+  <h1>공연 동아리</h1>
+  <table>
+   <tr>
+    <td onclick="location.href='perform/lod.html'" style="background-color: #fff">
+     <img src="../../image/perform&physical/perform/lod/lod_bg.png" />
+    </td>
+    <td></td>
+    <td onclick="location.href='perform/rhapsody.html'" style="background-color: #000">
+     <img src="../../image/perform&physical/perform/rhapsody/rhapsody_bg.PNG" />
+    </td>
+    <td></td>
+    <td onclick="location.href='perform/showgun.html'" style="background-color: #000">
+     <img src="../../image/perform&physical/perform/showgun/showgun_bg.png" />
+    </td>
+   </tr>
+   <tr>
+    <td>LOD<br /><span>주중자율</span></td>
+    <td></td>
+    <td>랩소디<br /><span>주중자율</span></td>
+    <td></td>
+    <td>쇼군<br /><span>주중자율</span></td>
+   </tr>
+   <tr>
+    <td onclick="location.href='perform/symphony.html'" style="background-color: #000">
+     <img src="../../image/perform&physical/perform/symphony/symphony_bg.png" />
+    </td>
+    <td></td>
+    <td onclick="location.href='perform/dell.html'" style="background-color: #000">
+     <img src="../../image/perform&physical/perform/dell/dell_bg.png" />
+    </td>
+    <td></td>
+    <td onclick="location.href='perform/swings.html'" style="background-color: #fff">
+     <img src="../../image/perform&physical/perform/swings/swings_bg.png" />
+    </td>
+   </tr>
+   <tr>
+    <td>심포니<br /><span>주중자율</span></td>
+    <td></td>
+    <td>델<br /><span>주중자율</span></td>
+    <td></td>
+    <td>
+     스윙스<br /><span style="margin-right: 2px">주중자율</span
+     ><span style="background: red; margin-left: 2px">신규!</span>
+    </td>
+   </tr>
+  </table>
+ </body>
+</html>
