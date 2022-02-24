@@ -1,1 +1,86 @@
-  
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>매치포인트</title>
+  <style>
+   html {
+    scroll-behavior: smooth;
+   }
+   body {
+    margin: 0;
+    background-color: #000;
+   }
+   nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0.5vw 0 0.5vw 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+   }
+   .logo {
+    height: 4vw;
+    display: inline-block;
+    cursor: pointer;
+   }
+   .list {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 4vw;
+    line-height: 4vw;
+   }
+   .list > li {
+    float: left;
+    width: 10wv;
+   }
+   .list > li > a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1vw 5vw;
+    font-size: 1.75vw;
+    text-shadow: 1px 1px #000;
+   }
+   .section {
+    margin-top: 5.25vw;
+    text-align: center;
+   }
+   .section > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75vw;
+   }
+  </style>
+ </head>
+ <body>
+  <nav>
+   <a href="#top"
+    ><img
+     src="../../../image/perform&physical/physical/matchpoint/matchpoint_logo.png"
+     class="logo"
+   /></a>
+   <ul class="list">
+    <li><a href="#target1">동아리 소개</a></li>
+    <li><a href="#target2">2021년 활동</a></li>
+    <li><a href="#target3">부원소개</a></li>
+   </ul>
+  </nav>
+
+  <div class="section">
+   <img src="../../../image/perform&physical/physical/matchpoint/001.PNG" />
+   <img src="../../../image/perform&physical/physical/matchpoint/002.PNG" id="target1" />
+   <img src="../../../image/perform&physical/physical/matchpoint/003.PNG" />
+   <img src="../../../image/perform&physical/physical/matchpoint/004.PNG" id="target2" />
+   <img src="../../../image/perform&physical/physical/matchpoint/005.PNG" id="target3" />
+   <img src="../../../image/perform&physical/physical/matchpoint/006.PNG" />
+   <img src="../../../image/perform&physical/physical/matchpoint/007.PNG" />
+  </div>
+ </body>
+</html>
