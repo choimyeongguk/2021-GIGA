@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <link rel="apple-touch-icon" sizes="57x57" href="../../image/webzine/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="../../image/webzine/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="../../image/webzine/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../../image/webzine/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="../../image/webzine/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="../../image/webzine/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="../../image/webzine/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="../../image/webzine/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../image/webzine/apple-icon-180x180.png" />
+  <link
+   rel="icon"
+   type="image/png"
+   sizes="192x192"
+   href="../../image/webzine/android-icon-192x192.png"
+  />
+  <link rel="icon" type="image/png" sizes="32x32" href="../../image/webzine/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="../../image/webzine/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../image/webzine/favicon-16x16.png" />
+  <link rel="manifest" href="../../image/webzine/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="../../image/webzine/ms-icon-144x144.png" />
+  <title>인문/토론 동아리</title>
+  <style>
+   @media only screen and (min-width: 426px) {
+    /*큰 화면*/
+    body {
+     margin: 0;
+     text-align: center;
+     overflow: hidden;
+     background-color: #f9e3be;
+     cursor: default;
+     user-select: none;
+    }
+    h1 {
+     font-size: 3vw;
+     cursor: default;
+     color: #81613c;
+    }
+    h2 {
+     font-size: 2vw;
+     margin: 2vw 0;
+    }
+    .liberal,
+    .debate {
+     display: inline-block;
+     border: 0.3vw solid #81613c;
+     border-radius: 25px;
+     color: #81613c;
+     cursor: pointer;
+     width: 15vw;
+     height: 7vw;
+     overflow: hidden;
+     transition-property: height;
+     transition-duration: 0.5s;
+    }
+    ul {
+     padding: 0;
+     list-style: none;
+     text-align: center;
+     font-size: 1.5vw;
+     line-height: 3vw;
+    }
+    .liberal {
+     position: absolute;
+     top: 10vw;
+     left: 30vw;
+     animation: slide1 1.5s;
+     -webkit-animation: slide1 1.5s;
+     -moz-animation: slide1 1.5s;
+     -o-animation: slide1 1.5s;
+    }
+    .liberal:hover,
+    .debate:hover {
+     height: 25vw;
+    }
+    .debate {
+     position: absolute;
+     top: 10vw;
+     right: 30vw;
+     animation: slide2 1.5s;
+     -webkit-animation: slide2 1.5s;
+     -moz-animation:  slide2 1.5s;
+     -o-animation:  slide2 1.5s;
+    }
+   }
+   @media only screen and (max-width: 426px) {
+    /*작은 화면*/
+    body {
+     margin: 0;
+     text-align: center;
+     background-color: #f9e3be;
+     cursor: default;
+     user-select: none;
+    }
+    h1 {
+     font-size: 10vw;
+     cursor: default;
+     color: #81613c;
+    }
+    h2 {
+     font-size: 6vw;
+     margin: 2vw 0;
+    }
+    ul {
+     padding: 0;
+     list-style: none;
+     text-align: center;
+     font-size: 1.5vw;
+     line-height: 3vw;
+     border: 0.3vw solid #81613c;
+     border-radius: 25px;
+    }
+    li {
+     line-height: 25px;
+     font-size: 4vw;
+    }
+    .liberal,
+    .debate {
+     display: inline-block;
+     color: #81613c;
+     cursor: pointer;
+     width: 75vw;
+     height: 30vw;
+     transition-property: height;
+     transition-duration: 0.5s;
+    }
+    .liberal {
+     position: absolute;
+     top: 15vh;
+     left: 15vh;
+     left: 0;
+     right: 0;
+     margin-left: auto;
+     margin-right: auto;
+     animation: mobile_1 1.5s;
+     -webkit-animation: mobile_1 1.5s;
+     -moz-animation: mobile_1 1.5s;
+     -o-animation: mobile_1 1.5s;
+    }
+    .debate {
+     position: absolute;
+     top: 35vh;
+     right: 30vw;
+     left: 0;
+     right: 0;
+     margin-left: auto;
+     margin-right: auto;
+     animation: mobile_2 1.5s;
+     -webkit-animation: mobile_2 1.5s;
+     -moz-animation: mobile_2 1.5s;
+     -o-animation: mobile_2 1.5s;
+    }
+   }
+   @keyframes slide1 {
+    from {
+     left: -15vw;
+     opacity: 0;
+    }
+    to {
+     left: 30vw;
+     opacity: 1;
+    }
+   }
+   @keyframes slide2 {
+    from {
+     right: -15vw;
+     opacity: 0;
+    }
+    to {
+     right: 30vw;
+     opacity: 1;
+    }
+   }
+   @keyframes mobile_1 {
+    from {
+     opacity: 0;
+     top: -15vh;
+    }
+    to {
+     opacity: 1;
+     top: 15vh;
+    }
+   }
+   @keyframes mobile_2 {
+    from {
+     opacity: 0;
+     top: -15vh;
+    }
+    to {
+     opacity: 1;
+     top: 35vh;
+    }
+   }
+   @-webkit-keyframes slide1 {
+    from {
+     left: -15vw;
+     opacity: 0;
+    }
+    to {
+     left: 30vw;
+     opacity: 1;
+    }
+   }
+   @-webkit-keyframes slide2 {
+    from {
+     right: -15vw;
+     opacity: 0;
+    }
+    to {
+     right: 30vw;
+     opacity: 1;
+    }
+   }
+   @-webkit-keyframes mobile_1 {
+    from {
+     opacity: 0;
+     top: -15vh;
+    }
+    to {
+     opacity: 1;
+     top: 15vh;
+    }
+   }
+   @-webkit-keyframes mobile_2 {
+    from {
+     opacity: 0;
+     top: -15vh;
+    }
+    to {
+     opacity: 1;
+     top: 35vh;
+    }
+   }
+   @-moz-keyframes slide1 {
+    from {
+     left: -15vw;
+     opacity: 0;
+    }
+    to {
+     left: 30vw;
+     opacity: 1;
+    }
+   }
+   @-moz-keyframes slide2 {
+    from {
+     right: -15vw;
+     opacity: 0;
+    }
+    to {
+     right: 30vw;
+     opacity: 1;
+    }
+   }
+   @-moz-keyframes mobile_1 {
+    from {
+     opacity: 0;
+     top: -15vh;
+    }
+    to {
+     opacity: 1;
+     top: 15vh;
+    }
+   }
+   @-moz-keyframes mobile_2 {
+    from {
+     opacity: 0;
+     top: -15vh;
+    }
+    to {
+     opacity: 1;
+     top: 35vh;
+    }
+   }
+   @-o-keyframes slide1 {
+    from {
+     left: -15vw;
+     opacity: 0;
+    }
+    to {
+     left: 30vw;
+     opacity: 1;
+    }
+   }
+   @-o-keyframes slide2 {
+    from {
+     right: -15vw;
+     opacity: 0;
+    }
+    to {
+     right: 30vw;
+     opacity: 1;
+    }
+    
+  }
+   @-o-keyframes mobile_1 {
+    from {
+     opacity: 0;
+     top: -15vh;
+    }
+    to {
+     opacity: 1;
+     top: 15vh;
+    }
+   }
+   @-o-keyframes mobile_2 {
+    from {
+     opacity: 0;
+     top: -15vh;
+    }
+    to {
+     opacity: 1;
+     top: 35vh;
+    }
+   }
+  </style>
+ </head>
+ <body>
+  <h1>인문/토론 동아리</h1>
+  <div class="liberal" onclick="location.href='liberal.html'">
+   <h2>인문</h2>
+   <ul>
+    <li>interpol</li>
+    <li>rapport</li>
+    <li>lex</li>
+   </ul>
+  </div>
+  <div class="debate" onclick="location.href='debate.html'">
+   <h2>토론</h2>
+   <ul>
+    <li>세상읽기</li>
+    <li>비블레</li>
+   </ul>
+  </div>
+ </body>
+</html>
