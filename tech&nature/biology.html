@@ -26,22 +26,17 @@
   <meta name="msapplication-TileColor" content="#ffffff" />
   <meta name="msapplication-TileImage" content="../../image/webzine/ms-icon-144x144.png" />
   <meta name="theme-color" content="#ffffff" />
-  <title>공연 동아리</title>
+  <title>생명 동아리</title>
   <style>
    @media only screen and (min-width: 426px) {
     /*큰 화면*/
-    body {
-     overflow: hidden;
-    }
     h1 {
-     color: #db7093;
-     margin-top: 50px;
-     margin-bottom: 50px;
+     color: #0abab5;
      font-size: 3vw;
     }
     table {
      position: absolute;
-     top: 150px;
+     top: 125px;
      left: 0;
      right: 0;
      margin-left: auto;
@@ -49,7 +44,7 @@
      font-size: 2vmax;
      animation: fade 1.5s;
      -webkit-animation: fade 1.5s;
-     color: #db7093;
+     color: #0abab5;
     }
     td {
      border: 2px solid #000;
@@ -62,7 +57,7 @@
     tr:nth-child(2n) > td {
      border: 0px;
      height: 50px;
-     padding-bottom: 25px;
+     padding-bottom: 20px;
     }
     td:nth-child(2n + 1) {
      width: 12.5vw;
@@ -79,15 +74,10 @@
      background: #808080;
      color: #fff;
     }
-    .sws {
-     margin-left: 4px;
-     background-color: red;
-    }
    }
    @media only screen and (max-width: 426px) {
-    /*작은 화면*/
     h1 {
-     color: #db7093;
+     color: #0abab5;
      margin-top: 50px;
      margin-bottom: 50px;
      font-size: 10vw;
@@ -96,7 +86,7 @@
      font-size: 3vmax;
      animation: mobile 1.5s;
      -webkit-animation: mobile 1.5s;
-     color: #db7093;
+     color: #0abab5;
      position: absolute;
      top: 45vw;
      left: 0;
@@ -112,6 +102,7 @@
     td {
      border: 2px solid #000;
      border-radius: 25%;
+     cursor: default;
     }
     tr:nth-child(2n + 1) {
      height: 25vw;
@@ -136,19 +127,15 @@
      background: #808080;
      color: #fff;
     }
-    .sws {
-     margin-left: 40px;
-     background-color: red;
-    }
    }
    @keyframes fade {
     from {
      opacity: 0;
-     top: 175px;
+     top: 150px;
     }
     to {
      opacity: 1;
-     top: 150px;
+     top: 125px;
     }
    }
    @keyframes mobile {
@@ -164,11 +151,11 @@
    @-webkit-keyframes fade {
     from {
      opacity: 0;
-     top: 175px;
+     top: 150px;
     }
     to {
      opacity: 1;
-     top: 150px;
+     top: 125px;
     }
    }
    @-webkit-keyframes mobile {
@@ -184,7 +171,7 @@
    body {
     margin: 0;
     text-align: center;
-    background-color: #ffead8;
+    background-color: #aaf0d1;
     user-select: none;
    }
 
@@ -205,47 +192,74 @@
   </style>
  </head>
  <body>
-  <h1>공연 동아리</h1>
+  <h1>생명 동아리</h1>
   <table>
    <tr>
-    <td onclick="window.open('perform/lod.html')" style="background-color: #fff" class="logo">
-     <img src="../../image/perform&physical/perform/lod/lod_bg.webp" />
+    <td
+     onclick="window.open('tech&nature/생명/cells.html')"
+     style="background-color: #fff"
+     class="logo"
+    >
+     <img src="../../image/tech&nature/cells/cells_logo.webp" />
     </td>
     <td></td>
-    <td onclick="window.open('perform/rhapsody.html')" style="background-color: #000" class="logo">
-     <img src="../../image/perform&physical/perform/rhapsody/rhapsody_bg.webp" />
+    <td
+     onclick="window.open('tech&nature/생명/creo.html')"
+     style="background-color: #000"
+     class="logo"
+    >
+     <img src="../../image/tech&nature/creo/creo_logo.webp" />
     </td>
     <td></td>
-    <td onclick="window.open('perform/showgun.html')" style="background-color: #000" class="logo">
-     <img src="../../image/perform&physical/perform/showgun/showgun_bg.webp" />
-    </td>
-   </tr>
-   <tr>
-    <td>LOD<br /><span>주중자율</span></td>
-    <td></td>
-    <td>랩소디<br /><span>주중자율</span></td>
-    <td></td>
-    <td>쇼군<br /><span>주중자율</span></td>
-   </tr>
-   <tr>
-    <td onclick="window.open('perform/symphony.html')" style="background-color: #000" class="logo">
-     <img src="../../image/perform&physical/perform/symphony/symphony_bg.webp" />
-    </td>
-    <td></td>
-    <td onclick="window.open('perform/dell.html')" style="background-color: #000" class="logo">
-     <img src="../../image/perform&physical/perform/dell/dell_bg.webp" />
-    </td>
-    <td></td>
-    <td onclick="window.open('perform/swings.html')" style="background-color: #fff" class="logo">
-     <img src="../../image/perform&physical/perform/swings/swings_bg.webp" />
+    <td
+     onclick="window.open('tech&nature/생명/cube.html')"
+     style="background-color: #fff"
+     class="logo"
+    >
+     <img src="../../image/tech&nature/cube/cube_logo.webp" style="width: 50%" />
     </td>
    </tr>
    <tr>
-    <td>심포니<br /><span>주중자율</span></td>
+    <td>CELLS<br /><span>정규</span></td>
     <td></td>
-    <td>델<br /><span>주중자율</span></td>
+    <td>CREO<br /><span>정규</span></td>
     <td></td>
-    <td>스윙스<br /><span style="margin-right: 0">주중자율</span><span class="sws">신규</span></td>
+    <td>CUBE<br /><span>정규</span></td>
+   </tr>
+   <tr>
+    <td
+     onclick="window.open('tech&nature/생명/kdx.html')"
+     style="background-color: #fff"
+     class="logo"
+    >
+     <img src="../../image/tech&nature/kdx/kdx_logo.webp" />
+    </td>
+    <td></td>
+    <td
+     onclick="window.open('tech&nature/생명/sin.html')"
+     style="background-color: #fff"
+     class="logo"
+    >
+     <img src="../../image/tech&nature/sin/sin_logo.webp" />
+    </td>
+    <td></td>
+    <td
+     onclick="window.open('tech&nature/생명/동물의숲.html')"
+     style="background-color: #fff"
+     class="logo"
+    >
+     <img src="../../image/tech&nature/동물의숲/동물의숲_logo2.webp" />
+    </td>
+   </tr>
+   <tr>
+    <td>Kdx<br /><span>정규</span></td>
+    <td></td>
+    <td>SIN<br /><span>정규</span></td>
+    <td></td>
+    <td>
+     동물의숲<br /><span style="margin-right: 2px">정규</span
+     ><span style="background: red; margin-left: 2px">신규!</span>
+    </td>
    </tr>
   </table>
  </body>

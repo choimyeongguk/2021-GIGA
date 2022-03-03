@@ -26,22 +26,20 @@
   <meta name="msapplication-TileColor" content="#ffffff" />
   <meta name="msapplication-TileImage" content="../../image/webzine/ms-icon-144x144.png" />
   <meta name="theme-color" content="#ffffff" />
-  <title>공연 동아리</title>
+  <title>인문 동아리</title>
   <style>
    @media only screen and (min-width: 426px) {
     /*큰 화면*/
-    body {
-     overflow: hidden;
-    }
     h1 {
-     color: #db7093;
+     color: #81613c;
      margin-top: 50px;
      margin-bottom: 50px;
      font-size: 3vw;
+     cursor: default;
     }
     table {
      position: absolute;
-     top: 150px;
+     top: 250px;
      left: 0;
      right: 0;
      margin-left: auto;
@@ -49,7 +47,7 @@
      font-size: 2vmax;
      animation: fade 1.5s;
      -webkit-animation: fade 1.5s;
-     color: #db7093;
+     color: #81613c;
     }
     td {
      border: 2px solid #000;
@@ -79,24 +77,21 @@
      background: #808080;
      color: #fff;
     }
-    .sws {
-     margin-left: 4px;
-     background-color: red;
-    }
    }
    @media only screen and (max-width: 426px) {
     /*작은 화면*/
     h1 {
-     color: #db7093;
+     color: #81613c;
      margin-top: 50px;
      margin-bottom: 50px;
      font-size: 10vw;
+     cursor: default;
     }
     table {
      font-size: 3vmax;
      animation: mobile 1.5s;
      -webkit-animation: mobile 1.5s;
-     color: #db7093;
+     color: #81613c;
      position: absolute;
      top: 45vw;
      left: 0;
@@ -112,6 +107,7 @@
     td {
      border: 2px solid #000;
      border-radius: 25%;
+     cursor: default;
     }
     tr:nth-child(2n + 1) {
      height: 25vw;
@@ -136,27 +132,23 @@
      background: #808080;
      color: #fff;
     }
-    .sws {
-     margin-left: 40px;
-     background-color: red;
-    }
    }
    @keyframes fade {
     from {
      opacity: 0;
-     top: 175px;
+     top: 275px;
     }
     to {
      opacity: 1;
-     top: 150px;
+     top: 250px;
     }
    }
-   @keyframes mobile {
-    from {
+   @keyframes mobile{
+    from{
      opacity: 0;
      top: 47vw;
     }
-    to {
+    to{
      opacity: 1;
      top: 45vw;
     }
@@ -164,19 +156,19 @@
    @-webkit-keyframes fade {
     from {
      opacity: 0;
-     top: 175px;
+     top: 275px;
     }
     to {
      opacity: 1;
-     top: 150px;
+     top: 250px;
     }
    }
-   @-webkit-keyframes mobile {
-    from {
+   @-webkit-keyframes mobile{
+    from{
      opacity: 0;
      top: 47vw;
     }
-    to {
+    to{
      opacity: 1;
      top: 45vw;
     }
@@ -184,7 +176,7 @@
    body {
     margin: 0;
     text-align: center;
-    background-color: #ffead8;
+    background-color: #f9e3be;
     user-select: none;
    }
 
@@ -205,47 +197,30 @@
   </style>
  </head>
  <body>
-  <h1>공연 동아리</h1>
+  <h1>인문 동아리</h1>
   <table>
    <tr>
-    <td onclick="window.open('perform/lod.html')" style="background-color: #fff" class="logo">
-     <img src="../../image/perform&physical/perform/lod/lod_bg.webp" />
+    <td onclick="window.open('liberal/interpol.html')" style="background-color: #000" class="logo">
+     <img src="../../image/liberal&debate/interpol/interpol_logo.webp" />
     </td>
     <td></td>
-    <td onclick="window.open('perform/rhapsody.html')" style="background-color: #000" class="logo">
-     <img src="../../image/perform&physical/perform/rhapsody/rhapsody_bg.webp" />
+    <td onclick="window.open('liberal/rapport.html')" style="background-color: #fff" class="logo">
+     <img src="../../image/liberal&debate/rapport/rapport_logo.webp" />
     </td>
     <td></td>
-    <td onclick="window.open('perform/showgun.html')" style="background-color: #000" class="logo">
-     <img src="../../image/perform&physical/perform/showgun/showgun_bg.webp" />
-    </td>
-   </tr>
-   <tr>
-    <td>LOD<br /><span>주중자율</span></td>
-    <td></td>
-    <td>랩소디<br /><span>주중자율</span></td>
-    <td></td>
-    <td>쇼군<br /><span>주중자율</span></td>
-   </tr>
-   <tr>
-    <td onclick="window.open('perform/symphony.html')" style="background-color: #000" class="logo">
-     <img src="../../image/perform&physical/perform/symphony/symphony_bg.webp" />
-    </td>
-    <td></td>
-    <td onclick="window.open('perform/dell.html')" style="background-color: #000" class="logo">
-     <img src="../../image/perform&physical/perform/dell/dell_bg.webp" />
-    </td>
-    <td></td>
-    <td onclick="window.open('perform/swings.html')" style="background-color: #fff" class="logo">
-     <img src="../../image/perform&physical/perform/swings/swings_bg.webp" />
+    <td onclick="window.open('liberal/lex.html')" style="background-color: #fff" class="logo">
+     <img src="../../image/liberal&debate/lex/lex_logo.webp" />
     </td>
    </tr>
    <tr>
-    <td>심포니<br /><span>주중자율</span></td>
+    <td>인터폴<br /><span>정규</span></td>
     <td></td>
-    <td>델<br /><span>주중자율</span></td>
+    <td>라포르<br /><span>정규</span></td>
     <td></td>
-    <td>스윙스<br /><span style="margin-right: 0">주중자율</span><span class="sws">신규</span></td>
+    <td>
+     LEX<br /><span style="margin-right: 2px">정규</span
+     ><span style="background: red; margin-left: 2px">신규</span>
+    </td>
    </tr>
   </table>
  </body>

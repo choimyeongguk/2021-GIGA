@@ -1,33 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gugi&display=swap"); /*gugi*/
+@keyframes slide_button {
+ from {
+  opacity: 0;
+ }
+ to {
+  opacity: 1;
+ }
+}
+@keyframes title {
+ from {
+  opacity: 0;
+ }
+ to {
+  opacity: 1;
+ }
+}
+@keyframes slide_left {
+ from {
+  left: -180vw;
+ }
+ to {
+  left: 0;
+ }
+}
+@keyframes gradient {
+ 0% {
+  background-position: 0% 50%;
+ }
+ 50% {
+  background-position: 100% 50%;
+ }
+ 100% {
+  background-position: 0% 50%;
+ }
+}
+@-webkit-keyframes slide_button {
+ from {
+  opacity: 0;
+ }
+ to {
+  opacity: 1;
+ }
+}
+@-webkit-keyframes title {
+ from {
+  opacity: 0;
+ }
+ to {
+  opacity: 1;
+ }
+}
+@-webkit-keyframes slide_left {
+ from {
+  left: -180vw;
+ }
+ to {
+  left: 0;
+ }
+}
+@-webkit-keyframes gradient {
+ 0% {
+  background-position: 0% 50%;
+ }
+ 50% {
+  background-position: 100% 50%;
+ }
+ 100% {
+  background-position: 0% 50%;
+ }
+}
 body {
  margin: 0;
+ background: linear-gradient(-45deg, #a9cbd7, #cfffe5, #f9e3be, #fcebc9, #ffead8);
+ background-size: 500% 500%;
+ animation: gradient 10s ease infinite;
+ -webkit-animation: gradient 10s ease infinite;
+ user-select: none;
 }
 header {
  text-align: center;
- height: 15vh;
- padding-top: 20px;
+ height: 17vh;
+ padding-top: 30px;
+ font-family: "Gugi", cursive;
 }
-h1{
+h1 {
  margin: 0;
+ font-size: 10vw;
 }
-h2{
- font-size: 5vw;
+h2 {
+ font-size: 4vw;
 }
-hr{
+h1,
+h2 {
+ color: #fff;
+ animation: title 3s;
+ -webkit-animation: title 3s;
+ text-shadow: 1px 1px 3px #000;
+}
+main {
  margin: 0;
+ padding-top: 75px;
+ height: 550px;
+ background-color: rgba(0, 0, 0, 0.15);
 }
-main{
- margin: 0;
- padding-top: 15px;
- height: 600px;
-}
-footer{
+footer {
  margin-top: 0;
  text-align: center;
 }
 a {
  color: #000;
- text-decoration: none;
- display: inline-block;
 }
 
 .button1 {
@@ -36,75 +118,144 @@ a {
 .button1 > ul {
  list-style: none;
  padding: 0;
- margin-bottom: 10px;
+ margin-top: 0;
+ margin-bottom: 50px;
 }
 .button1 > ul > a > li {
- border: 1px solid #000;
+ position: absolute;
+ left: 0;
+ right: 0;
+ margin-left: auto;
+ margin-right: auto;
+ display: inline-block;
+ border: 5px solid #d3d3d3;
  border-radius: 25px;
  text-align: center;
  width: 75vw;
  height: 55px;
  line-height: 55px;
- margin-left: auto;
- margin-right: auto;
- font-size: 5vw;
+ font-size: 6vw;
+ background-color: rgba(255, 255, 255);
+ font-family: "NanumSquareRound";
+}
+#button1-1 {
+ top: 25vh;
+ left: -180vw;
+ animation: slide_left 1.5s;
+ animation-fill-mode: forwards;
+ -webkit-animation: slide_left 1.5s;
+ -webkit-animation-fill-mode: forwards;
+}
+#button1-2 {
+ top: 37vh;
+ left: -180vw;
+ animation: slide_left 1.5s;
+ animation-delay: 0.2s;
+ animation-fill-mode: forwards;
+ -webkit-animation: slide_left 1.5s;
+ -webkit-animation-delay: 0.2s;
+ -webkit-animation-fill-mode: forwards;
+}
+#button1-3 {
+ top: 49vh;
+ left: -180vw;
+ animation: slide_left 1.5s;
+ animation-delay: 0.4s;
+ animation-fill-mode: forwards;
+ -webkit-animation: slide_left 1.5s;
+ -webkit-animation-delay: 0.4s;
+ -webkit-animation-fill-mode: forwards;
 }
 #makers {
- margin: 20px 5vw;
+ margin: 0 5vw;
+ animation: slide_left 1s;
+ -webkit-animation: slide_left 1s;
 }
 
 .button2 > ul {
  list-style: none;
- padding: 0;
- margin: 0;
 }
 .button2 > ul > a > li {
  display: inline-block;
- border: 1px solid #000;
- border-radius: 25px;
  text-align: center;
- width: 27.5vw;
- height: 27.5vw;
- line-height: 27.5vw;
- font-size: 2vmax;
+ width: 28vw;
+ height: 28vw;
+ line-height: 28vw;
+ font-family: "Jua", sans-serif;
+ font-size: 6vw;
+ background-color: rgba(0, 0, 0, 0.5);
+ transition-property: opacity;
+ transition-duration: 0.3s;
+}
+.button2 > ul > a > li:hover {
+ opacity: 0.7;
 }
 #button2-1 {
  position: absolute;
- top: 400px;
+ top: 63vh;
  left: 15vw;
- animation: slide1 1s;
+ opacity: 0;
+ border: 5px solid #cfffe5;
+ animation: slide_button 2s ease-out;
+ animation-fill-mode: forwards;
+ -webkit-animation: slide_button 2s ease-out;
+ -webkit-animation-fill-mode: forwards;
+ color: #cfffe5;
+
+ border-radius: 15% 15% 60% 15%;
 }
 #button2-2 {
  position: absolute;
- top: 400px;
- left: 57.5vw;
- animation: slide2 1s;
+ top: 63vh;
+ right: 15vw;
+ opacity: 0;
+ border: 5px solid #a9cbd7;
+ color: #a9cbd7;
+ animation: slide_button 2s ease-out;
+ animation-fill-mode: forwards;
+ -webkit-animation: slide_button 2s ease-out;
+ -webkit-animation-fill-mode: forwards;
+ border-radius: 15% 15% 15% 60%;
 }
 #button2-3 {
  position: absolute;
- top: 550px;
+ top: 87vh;
  left: 15vw;
- animation: slide1 1.5s;
+ opacity: 0;
+ border: 5px solid #f9e3be;
+ color: #f9e3be;
+ animation: slide_button 2s ease-out;
+ animation-fill-mode: forwards;
+ -webkit-animation: slide_button 2s ease-out;
+ -webkit-animation-fill-mode: forwards;
+ border-radius: 15% 60% 15% 15%;
 }
 #button2-4 {
  position: absolute;
- top: 550px;
- left: 57.5vw;
- animation: slide2 1.5s;
+ top: 87vh;
+ right: 15vw;
+ opacity: 0;
+ border: 5px solid #ffead8;
+ color: #ffead8;
+ animation: slide_button 2s ease-out;
+ animation-fill-mode: forwards;
+ -webkit-animation: slide_button 2s ease-out;
+ -webkit-animation-fill-mode: forwards;
+ border-radius: 60% 15% 15% 15%;
 }
-@keyframes slide1 {
- from {
-  left: -20vw;
- }
- to {
-  left: 15vw;
- }
-}
-@keyframes slide2 {
- from {
-  left: 100vw;
- }
- to {
-  left: 57.5vw;
- }
+#button2-5 {
+ position: absolute;
+ top: 75vh;
+ right: 0;
+ left: 0;
+ margin-right: auto;
+ margin-left: auto;
+ opacity: 1;
+ border: 5px solid #fcebc9;
+ color: #fcebc9;
+ animation: slide_button 2s ease-out;
+ animation-fill-mode: forwards;
+ -webkit-animation: slide_button 2s ease-out;
+ -webkit-animation-fill-mode: forwards;
+ border-radius: 50% 50% 50% 50%;
 }

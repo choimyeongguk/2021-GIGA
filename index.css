@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Jua&family=Stylish&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gugi&display=swap"); /*gugi*/
 @keyframes slide {
  from {
   top: 73vh;
@@ -18,32 +18,79 @@
   opacity: 1;
  }
 }
+@keyframes gradient {
+ 0% {
+  background-position: 0% 50%;
+ }
+ 50% {
+  background-position: 100% 50%;
+ }
+ 100% {
+  background-position: 0% 50%;
+ }
+}
+@-webkit-keyframes slide {
+ from {
+  top: 73vh;
+  opacity: 0;
+ }
+ to {
+  top: 400px;
+  opacity: 1;
+ }
+}
+@-webkit-keyframes title {
+ from {
+  opacity: 0;
+ }
+ to {
+  opacity: 1;
+ }
+}
+@-webkit-keyframes gradient {
+ 0% {
+  background-position: 0% 50%;
+ }
+ 50% {
+  background-position: 100% 50%;
+ }
+ 100% {
+  background-position: 0% 50%;
+ }
+}
 body {
  margin: 0;
+ background: linear-gradient(-45deg, #a9cbd7, #cfffe5, #f9e3be, #fcebc9, #ffead8);
+ background-size: 500% 500%;
+ animation: gradient 10s ease infinite;
+ -webkit-animation: gradient 10s ease infinite;
+ user-select: none;
 }
 header {
  text-align: center;
- height: 15vh;
- padding-top: 20px;
- color: black;
- font-family: 궁서체;
+ height: 17vh;
+ padding-top: 30px;
+ font-family: "Gugi", cursive;
 }
 h1 {
  margin: 0;
- font-size: 2.5em;
+ font-size: 3.5vmax;
+}
+h2 {
+ font-size: 1.5vmax;
 }
 h1,
 h2 {
+ color: #fff;
  animation: title 3s;
-}
-hr {
- margin: 0;
+ -webkit-animation: title 3s;
+ text-shadow: 1px 1px 3px #000;
 }
 main {
  margin: 0;
  padding-top: 75px;
  height: 450px;
- background-color: rgba(0, 0, 0, 0.5);
+ background-color: rgba(0, 0, 0, 0.15);
 }
 footer {
  margin-top: 0;
@@ -64,15 +111,21 @@ a {
 }
 .button1 > ul > a > li {
  display: inline-block;
- border: 1px solid #000;
+ border: 5px solid #d3d3d3;
  border-radius: 25px;
  text-align: center;
  width: 20vmax;
  height: 55px;
  line-height: 55px;
  font-size: 1.5vmax;
- background-color: white;
- font-family: 고딕;
+ background-color: rgba(255,255,255,0.85);
+ font-family: 'NanumSquareRound';
+ transition-property: transform, background-color;
+ transition-duration: 0.5s;
+}
+.button1>ul>a>li:hover{
+ transform: scale(1.1);
+ background-color: rgba(255,255,255);
 }
 #makers {
  margin: 0 5vw;
@@ -91,29 +144,36 @@ a {
  font-size: 2.5vmax;
  background-color: rgba(0, 0, 0, 0.5);
  border-radius: 25px;
+ transition-property: box-shadow, transform;
+ transition-duration: 0.3s;
 }
 #button2-1 {
  position: absolute;
  top: 73vh;
  left: 10vw;
  opacity: 0;
- border: 5px solid #FB9DA7;
+ border: 5px solid #cfffe5;
  animation: slide 1s ease-out;
  animation-fill-mode: forwards;
- color: #FB9DA7;
- box-shadow: 0px 10px #FB9DA7;
+ -webkit-animation: slide 1s ease-out;
+ -webkit-animation-fill-mode: forwards;
+ color: #cfffe5;
+ box-shadow: 0px 10px #cfffe5;
 }
 #button2-2 {
  position: absolute;
  top: 73vh;
  left: 26.875vw;
  opacity: 0;
- border: 5px solid #fcccd4;
- color: #fcccd4;
+ border: 5px solid #a9cbd7;
+ color: #a9cbd7;
  animation: slide 1s ease-out;
  animation-delay: 0.2s;
  animation-fill-mode: forwards;
- box-shadow: 0px 10px #fcccd4;
+ -webkit-animation: slide 1s ease-out;
+ -webkit-animation-delay: 0.2s;
+ -webkit-animation-fill-mode: forwards;
+ box-shadow: 0px 10px #a9cbd7;
 }
 #button2-3 {
  position: absolute;
@@ -123,36 +183,45 @@ a {
  margin-left: auto;
  margin-right: auto;
  opacity: 0;
- border: 5px solid #fbdea2;
- color: #fbdea2;
+ border: 5px solid #f9e3be;
+ color: #f9e3be;
  animation: slide 1s ease-out;
  animation-delay: 0.4s;
  animation-fill-mode: forwards;
- box-shadow: 0px 10px #fbdea2;
+ -webkit-animation: slide 1s ease-out;
+ -webkit-animation-delay: 0.4s;
+ -webkit-animation-fill-mode: forwards;
+ box-shadow: 0px 10px #f9e3be;
 }
 #button2-4 {
  position: absolute;
  top: 73vh;
  right: 26.875vw;
  opacity: 0;
- border: 5px solid #f2e2c6;
- color: #f2e2c6;
+ border: 5px solid #ffead8;
+ color: #ffead8;
  animation: slide 1s ease-out;
  animation-delay: 0.6s;
  animation-fill-mode: forwards;
- box-shadow: 0px 10px #f2e2c6;
+ -webkit-animation: slide 1s ease-out;
+ -webkit-animation-delay: 0.6s;
+ -webkit-animation-fill-mode: forwards;
+ box-shadow: 0px 10px #ffead8;
 }
 #button2-5 {
  position: absolute;
  top: 73vh;
  right: 10vw;
  opacity: 0;
- border: 5px solid #8eb695;
- color: #8eb695;
+ border: 5px solid #fcebc9;
+ color: #fcebc9;
  animation: slide 1s ease-out;
  animation-delay: 0.8s;
  animation-fill-mode: forwards;
- box-shadow: 0px 10px #8eb695;
+ -webkit-animation: slide 1s ease-out;
+ -webkit-animation-delay: 0.8s;
+ -webkit-animation-fill-mode: forwards;
+ box-shadow: 0px 10px #fcebc9;
 }
 #button2-1:hover {
  box-shadow: 0px 0px;
@@ -173,46 +242,4 @@ a {
 #button2-5:hover {
  box-shadow: 0px 0px;
  transform: translate(0px, 10px);
-}
-.bg_gradation1 {
- background: linear-gradient(270deg, #98ddca, #d5ecc2, #ffd3b4, #ffaaa7);
- background-size: 800% 800%;
-
- -webkit-animation: AnimationName 14s ease infinite;
- -moz-animation: AnimationName 14s ease infinite;
- animation: AnimationName 14s ease infinite;
-}
-
-@-webkit-keyframes AnimationName {
- 0% {
-  background-position: 97% 0%;
- }
- 50% {
-  background-position: 4% 100%;
- }
- 100% {
-  background-position: 97% 0%;
- }
-}
-@-moz-keyframes AnimationName {
- 0% {
-  background-position: 97% 0%;
- }
- 50% {
-  background-position: 4% 100%;
- }
- 100% {
-  background-position: 97% 0%;
- }
-}
-@keyframes AnimationName {
- 0% {
-  background-position: 97% 0%;
- }
- 50% {
-  background-position: 4% 100%;
- }
- 100% {
-  background-position: 97% 0%;
- }
 }
