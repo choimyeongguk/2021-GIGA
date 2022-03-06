@@ -31,10 +31,6 @@
   <style>
    @media only screen and (min-width: 426px) {
     /*큰 화면*/
-    body {
-     overflow: hidden;
-    }
-
     h1 {
      color: #0067a3;
      margin-top: 50px;
@@ -43,31 +39,23 @@
     }
 
     table {
-     position: absolute;
-     left: 0;
-     right: 0;
      margin-left: auto;
      margin-right: auto;
      font-size: 2vmax;
      color: #0067a3;
     }
-
     .layer1 {
-     animation: fade1 1.5s;
-     -webkit-animation: fade1 1.5s;
-     -moz-animation: fade1 1.5s;
-     -o-animation: fade1 1.5s;
-     top: 150px;
+     animation: fade 2.5s;
+     -webkit-animation: fade 2.5s;
+     -moz-animation: fade 2.5s;
+     -o-animation: fade 2.5s;
     }
-
     .layer2 {
-     animation: fade2 1.5s;
-     -webkit-animation: fade2 1.5s;
-     -moz-animation: fade2 1.5s;
-     -o-animation: fade2 1.5s;
-     top: 450px;
+     animation: fade2 2.5s;
+     -webkit-animation: fade2 2.5s;
+     -moz-animation: fade2 2.5s;
+     -o-animation: fade2 2.5s;
     }
-
     td {
      border: 2px solid #000;
      border-radius: 25%;
@@ -114,33 +102,22 @@
     table {
      font-size: 3vmax;
      color: #0067a3;
-     position: absolute;
-     top: 45vw;
-     left: 0;
-     right: 0;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-
-     display: -webkit-flex;
-     -webkit-align-item: center;
-     -webkit-justify-content: center;
+     margin-left: auto;
+     margin-right: auto;
     }
 
     .layer1 {
-     animation: mobile_1 1.5s;
-     -webkit-animation: mobile_1 1.5s;
-     -moz-animation: mobile_1 1.5s;
-     -o-animation: mobile_1 1.5s;
-     top: 45vw;
+     animation: fade 2.5s;
+     -webkit-animation: fade 2.5s;
+     -moz-animation: fade 2.5s;
+     -o-animation: fade 2.5s;
     }
 
     .layer2 {
-     animation: mobile_2 1.5s;
-     -webkit-animation: mobile_2 1.5s;
-     -moz-animation: mobile_2 1.5s;
-     -o-animation: mobile_2 1.5s;
-     top: 90vw;
+     animation: fade2 2.5s;
+     -webkit-animation: fade2 2.5s;
+     -moz-animation: fade2 2.5s;
+     -o-animation: fade2 2.5s;
     }
 
     td {
@@ -181,193 +158,80 @@
     }
    }
 
-   @keyframes fade1 {
+   @keyframes fade {
     from {
      opacity: 0;
-     top: 175px;
+     margin-top: 5vmax;
     }
 
     to {
      opacity: 1;
-     top: 150px;
+     margin-top: 0;
     }
    }
+   @-webkit-keyframes fade {
+    from {
+     opacity: 0;
+     margin-top: 5vmax;
+    }
 
+    to {
+     opacity: 1;
+     margin-top: 0;
+    }
+   }
+   @-moz-keyframes fade {
+    from {
+     opacity: 0;
+     margin-top: 5vmax;
+    }
+
+    to {
+     opacity: 1;
+     margin-top: 0;
+    }
+   }
+   @-o-keyframes fade {
+    from {
+     opacity: 0;
+     margin-top: 5vmax;
+    }
+
+    to {
+     opacity: 1;
+     margin-top: 0;
+    }
+   }
    @keyframes fade2 {
     from {
      opacity: 0;
-     top: 475px;
     }
-
     to {
      opacity: 1;
-     top: 450px;
     }
    }
-
-   @keyframes mobile_1 {
-    from {
-     opacity: 0;
-     top: 47vw;
-    }
-
-    to {
-     opacity: 1;
-     top: 45vw;
-    }
-   }
-
-   @keyframes mobile_2 {
-    from {
-     opacity: 0;
-     top: 92vw;
-    }
-
-    to {
-     opacity: 1;
-     top: 90vw;
-    }
-   }
-
-   @-webkit-keyframes fade1 {
-    from {
-     opacity: 0;
-     top: 175px;
-    }
-
-    to {
-     opacity: 1;
-     top: 150px;
-    }
-   }
-
    @-webkit-keyframes fade2 {
     from {
      opacity: 0;
-     top: 475px;
     }
-
     to {
      opacity: 1;
-     top: 450px;
     }
    }
-
-   @-webkit-keyframes mobile_1 {
-    from {
-     opacity: 0;
-     top: 47vw;
-    }
-
-    to {
-     opacity: 1;
-     top: 45vw;
-    }
-   }
-
-   @-webkit-keyframes mobile_2 {
-    from {
-     opacity: 0;
-     top: 92vw;
-    }
-
-    to {
-     opacity: 1;
-     top: 90vw;
-    }
-   }
-   @-moz-keyframes fade1 {
-    from {
-     opacity: 0;
-     top: 175px;
-    }
-
-    to {
-     opacity: 1;
-     top: 150px;
-    }
-   }
-
    @-moz-keyframes fade2 {
     from {
      opacity: 0;
-     top: 475px;
     }
-
     to {
      opacity: 1;
-     top: 450px;
     }
    }
-
-   @-moz-keyframes mobile_1 {
-    from {
-     opacity: 0;
-     top: 47vw;
-    }
-
-    to {
-     opacity: 1;
-     top: 45vw;
-    }
-   }
-
-   @-moz-keyframes mobile_2 {
-    from {
-     opacity: 0;
-     top: 92vw;
-    }
-
-    to {
-     opacity: 1;
-     top: 90vw;
-    }
-   }
-   @-o-keyframes fade1 {
-    from {
-     opacity: 0;
-     top: 175px;
-    }
-
-    to {
-     opacity: 1;
-     top: 150px;
-    }
-   }
-
    @-o-keyframes fade2 {
     from {
      opacity: 0;
-     top: 475px;
     }
-
     to {
      opacity: 1;
-     top: 450px;
-    }
-   }
-
-   @-o-keyframes mobile_1 {
-    from {
-     opacity: 0;
-     top: 47vw;
-    }
-
-    to {
-     opacity: 1;
-     top: 45vw;
-    }
-   }
-
-   @-o-keyframes mobile_2 {
-    from {
-     opacity: 0;
-     top: 92vw;
-    }
-
-    to {
-     opacity: 1;
-     top: 90vw;
     }
    }
 

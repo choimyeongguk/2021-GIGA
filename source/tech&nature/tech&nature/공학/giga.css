@@ -6,8 +6,32 @@
   opacity: 1;
  }
 }
+@-webkit-keyframes fade-in {
+ from {
+  opacity: 0;
+ }
+ to {
+  opacity: 1;
+ }
+}
+@-moz-keyframes fade-in {
+ from {
+  opacity: 0;
+ }
+ to {
+  opacity: 1;
+ }
+}
+@-o-keyframes fade-in {
+ from {
+  opacity: 0;
+ }
+ to {
+  opacity: 1;
+ }
+}
 body {
- background-color: #2a4666;
+ background-color: #2e4866;
 }
 div {
  padding: 0;
@@ -23,6 +47,15 @@ div {
  animation: fade-in 3s linear;
  animation-delay: 0.5s;
  animation-fill-mode: forwards;
+ -webkit-animation: fade-in 3s linear;
+ -webkit-animation-delay: 0.5s;
+ -webkit-animation-fill-mode: forwards;
+ -moz-animation: fade-in 3s linear;
+ -moz-animation-delay: 0.5s;
+ -moz-animation-fill-mode: forwards;
+ -o-animation: fade-in 3s linear;
+ -o-animation-delay: 0.5s;
+ -o-animation-fill-mode: forwards;
 }
 .page_2 {
  background-image: url("../../../../image/tech&nature/giga/002.webp");

@@ -1,98 +1,75 @@
-@keyframes fade-in {
- from {
-  opacity: 0;
- }
- to {
-  opacity: 1;
- }
-}
 body {
- background-color: #2a4666;
+ background-color: #2e4866;
 }
 div {
  padding: 0;
- height: 100vh;
+ height: 100vw;
 }
 .page_1 {
  background-image: url("../../../../image/tech&nature/giga/001.webp");
  background-size: contain;
  background-repeat: no-repeat;
  background-position: center;
- background-attachment: fixed;
- opacity: 0;
- animation: fade-in 3s linear;
- animation-delay: 0.5s;
- animation-fill-mode: forwards;
 }
 .page_2 {
  background-image: url("../../../../image/tech&nature/giga/002.webp");
  background-size: contain;
  background-repeat: no-repeat;
  background-position: center;
- background-attachment: fixed;
 }
 .page_3 {
  background-image: url("../../../../image/tech&nature/giga/003.webp");
  background-size: contain;
  background-repeat: no-repeat;
  background-position: center;
- background-attachment: fixed;
 }
 .page_4 {
  background-image: url("../../../../image/tech&nature/giga/004.webp");
  background-size: contain;
  background-repeat: no-repeat;
  background-position: center;
- background-attachment: fixed;
 }
 .page_5 {
  background-image: url("../../../../image/tech&nature/giga/005.webp");
  background-size: contain;
  background-repeat: no-repeat;
  background-position: center;
- background-attachment: fixed;
 }
 .page_6 {
  background-image: url("../../../../image/tech&nature/giga/006.webp");
  background-size: contain;
  background-repeat: no-repeat;
  background-position: center;
- background-attachment: fixed;
 }
 .page_7 {
  background-image: url("../../../../image/tech&nature/giga/007.webp");
  background-size: contain;
  background-repeat: no-repeat;
  background-position: center;
- background-attachment: fixed;
 }
 .page_8 {
  background-image: url("../../../../image/tech&nature/giga/008.webp");
  background-size: contain;
  background-repeat: no-repeat;
  background-position: center;
- background-attachment: fixed;
 }
 .page_9 {
  background-image: url("../../../../image/tech&nature/giga/009.webp");
  background-size: contain;
  background-repeat: no-repeat;
  background-position: center;
- background-attachment: fixed;
 }
 .page_10 {
  background-image: url("../../../../image/tech&nature/giga/010.webp");
  background-size: contain;
  background-repeat: no-repeat;
  background-position: center;
- background-attachment: fixed;
 }
 .page_11 {
  background-image: url("../../../../image/tech&nature/giga/011.webp");
  background-size: contain;
  background-repeat: no-repeat;
  background-position: center;
- background-attachment: fixed;
 }
 
 h1 {

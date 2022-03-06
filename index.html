@@ -1,5 +1,5 @@
 <!-- 안녕 20기들! 혹시 이걸 보는 20기 신입생이 있다면 GIGA 지원서에 적었을 때 좋은 일이 일어날 수도 있음-->
-<!-- GIGA에 지원하지 않더라도 hcugiga@gmail.com에 이걸 봤다고 메일 해주면 선물 드림 >_<  -->
+<!-- GIGA에 지원하지 않더라도 hcugiga@gmail.com에 이걸 봤다고 메일 해주면 선물 드림(20기만 해당!) >_<  -->
 <!-- 소문내기 절대금지!-->
 
 <!DOCTYPE html>
@@ -40,7 +40,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="image/webzine/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="96x96" href="image/webzine/favicon-96x96.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="image/webzine/favicon-16x16.png" />
-  <link rel="manifest" href="../image/webzine/manifest.json" />
+  <link rel="manifest" href="image/webzine/manifest.json" />
   <meta name="msapplication-TileColor" content="#ffffff" />
   <meta name="msapplication-TileImage" content="image/webzine/ms-icon-144x144.png" />
   <link
@@ -229,7 +229,7 @@
     main {
      margin: 0;
      padding-top: 75px;
-     height: 550px;
+     height: 80vh;
      background-color: rgba(0, 0, 0, 0.15);
     }
     footer {
@@ -247,7 +247,7 @@
      list-style: none;
      padding: 0;
      margin-top: 0;
-     margin-bottom: 50px;
+     margin-bottom: 25px;
     }
     .button1 > ul > a > li {
      position: absolute;
@@ -433,7 +433,7 @@
       opacity: 0;
      }
      to {
-      top: 400px;
+      top: 450px;
       opacity: 1;
      }
     }
@@ -462,7 +462,7 @@
       opacity: 0;
      }
      to {
-      top: 400px;
+      top: 450px;
       opacity: 1;
      }
     }
@@ -492,7 +492,7 @@
       opacity: 0;
      }
      to {
-      top: 400px;
+      top: 450px;
       opacity: 1;
      }
     }
@@ -521,7 +521,7 @@
       opacity: 0;
      }
      to {
-      top: 400px;
+      top: 450px;
       opacity: 1;
      }
     }
@@ -604,7 +604,7 @@
      border: 5px solid #d3d3d3;
      border-radius: 25px;
      text-align: center;
-     width: 20vmax;
+     width: 20vw;
      height: 55px;
      line-height: 55px;
      font-size: 1.5vmax;
@@ -627,11 +627,11 @@
     .button2 > ul > a > li {
      display: inline-block;
      text-align: center;
-     width: 12.5vmax; /*수정부분*/
-     height: 12.5vmax; /*수정부분*/
+     width: 12.5vw; /*수정부분*/
+     height: 12.5vw; /*수정부분*/
      line-height: 12.5vw;
      font-family: "Jua", sans-serif;
-     font-size: 2.5vmax;
+     font-size: 2.5vw;
      background-color: rgba(0, 0, 0, 0.5);
      border-radius: 25px;
      transition-property: box-shadow, transform;
@@ -772,7 +772,10 @@
   <main>
    <div class="button1">
     <ul>
-     <a href="https://hcu-webzine.com/index.html" target="_blank"
+     <a
+      href="https://archive.hcu-webzine.com/webzine2020/index.html"
+      target="_blank"
+      onclick="alert('이전 자료는 개인정보 보호를 위해 학교 내부 IP에서만 접속이 가능합니다. 재학생은 USE_WIFI 연결 후 이용하세요.')"
       ><li id="button1-1">작년 웹진 보러가기</li></a
      >
      <a href="source/tech&nature/tech&nature/공학/giga.html" target="_blank" id="makers">

@@ -41,17 +41,13 @@
      font-size: 3vw;
     }
     table {
-     position: absolute;
-     top: 150px;
-     left: 0;
-     right: 0;
      margin-left: auto;
      margin-right: auto;
      font-size: 2vmax;
-     animation: fade 1.5s;
-     -webkit-animation: fade 1.5s;
-     -moz-animation: fade 1.5s;
-     -o-animation: fade 1.5s;
+     animation: fade 2.5s;
+     -webkit-animation: fade 2.5s;
+     -moz-animation: fade 2.5s;
+     -o-animation: fade 2.5s;
      color: #db7093;
     }
     td {
@@ -97,22 +93,13 @@
     }
     table {
      font-size: 3vmax;
-     animation: mobile 1.5s;
-     -webkit-animation: mobile 1.5s;
-     -moz-animation: mobile 1.5s;
-     -o-animation: mobile 1.5s;
+     animation: fade 2.5s;
+     -webkit-animation: fade 2.5s;
+     -moz-animation: fade 2.5s;
+     -o-animation: fade 2.5s;
      color: #db7093;
-     position: absolute;
-     top: 45vw;
-     left: 0;
-     right: 0;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-
-     display: -webkit-flex;
-     -webkit-align-item: center;
-     -webkit-justify-content: center;
+     margin-left: auto;
+     margin-right: auto;
     }
     td {
      border: 2px solid #000;
@@ -152,85 +139,44 @@
    @keyframes fade {
     from {
      opacity: 0;
-     top: 175px;
+     margin-top: 10vmax;
     }
     to {
      opacity: 1;
-     top: 150px;
-    }
-   }
-   @keyframes mobile {
-    from {
-     opacity: 0;
-     top: 47vw;
-    }
-    to {
-     opacity: 1;
-     top: 45vw;
+     margin-top: 0;
     }
    }
    @-webkit-keyframes fade {
     from {
      opacity: 0;
-     top: 175px;
+     margin-top: 10vmax;
     }
     to {
      opacity: 1;
-     top: 150px;
+     margin-top: 0;
     }
    }
-   @-webkit-keyframes mobile {
-    from {
-     opacity: 0;
-     top: 47vw;
-    }
-    to {
-     opacity: 1;
-     top: 45vw;
-    }
-   }
-   /*d*/
    @-moz-keyframes fade {
     from {
      opacity: 0;
-     top: 175px;
+     margin-top: 10vmax;
     }
     to {
      opacity: 1;
-     top: 150px;
+     margin-top: 0;
     }
    }
-   @-moz-keyframes mobile {
-    from {
-     opacity: 0;
-     top: 47vw;
-    }
-    to {
-     opacity: 1;
-     top: 45vw;
-    }
-   }
-   /*f*/
    @-o-keyframes fade {
     from {
      opacity: 0;
-     top: 175px;
+     margin-top: 10vmax;
     }
     to {
      opacity: 1;
-     top: 150px;
+     margin-top: 0;
     }
    }
-   @-o-keyframes mobile {
-    from {
-     opacity: 0;
-     top: 47vw;
-    }
-    to {
-     opacity: 1;
-     top: 45vw;
-    }
-   }
+
    body {
     margin: 0;
     text-align: center;
